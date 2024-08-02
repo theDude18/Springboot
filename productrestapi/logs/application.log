@@ -1,0 +1,647 @@
+2024-07-28T18:40:37.755+05:30  INFO 18848 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 21.0.3 with PID 18848 (C:\Users\2126306\Documents\springboot\productrestapi\target\classes started by 2126306 in C:\Users\2126306\Documents\springboot\productrestapi)
+2024-07-28T18:40:37.771+05:30  INFO 18848 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-07-28T18:40:38.768+05:30  INFO 18848 --- [productrestapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-28T18:40:38.826+05:30  INFO 18848 --- [productrestapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2024-07-28T18:40:39.644+05:30  INFO 18848 --- [productrestapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8181 (http)
+2024-07-28T18:40:39.666+05:30  INFO 18848 --- [productrestapi] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-28T18:40:39.667+05:30  INFO 18848 --- [productrestapi] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-28T18:40:39.770+05:30  INFO 18848 --- [productrestapi] [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2024-07-28T18:40:39.770+05:30  INFO 18848 --- [productrestapi] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1932 ms
+2024-07-28T18:40:40.088+05:30  WARN 18848 --- [productrestapi] [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2024-07-28T18:40:40.234+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.system.logo                : [192.168.182.90]:5701 [dev] [5.4.0] 
+	o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+	|    |    / \       /         |     /         / \    |         |   
+	o----o       o     o   o----o |    o             o   o----o    |   
+	|    |  *     \   /           |     \       *     \       |    |   
+	o    o *       o o---o   o--o o----o o---o *       o o----o    o   
+2024-07-28T18:40:40.234+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+2024-07-28T18:40:40.235+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Hazelcast Platform 5.4.0 (20240415) starting at [192.168.182.90]:5701
+2024-07-28T18:40:40.238+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Cluster name: dev
+2024-07-28T18:40:40.238+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2024-07-28T18:40:40.242+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2024-07-28T18:40:41.176+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.system.security            : [192.168.182.90]:5701 [dev] [5.4.0] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2024-07-28T18:40:41.269+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.instance.impl.Node         : [192.168.182.90]:5701 [dev] [5.4.0] Using Multicast discovery
+2024-07-28T18:40:41.274+05:30  WARN 18848 --- [productrestapi] [main] com.hazelcast.cp.CPSubsystem             : [192.168.182.90]:5701 [dev] [5.4.0] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2024-07-28T18:40:41.480+05:30  INFO 18848 --- [productrestapi] [main] c.h.internal.diagnostics.Diagnostics     : [192.168.182.90]:5701 [dev] [5.4.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2024-07-28T18:40:41.486+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is STARTING
+2024-07-28T18:40:43.519+05:30  INFO 18848 --- [productrestapi] [main] c.h.internal.cluster.ClusterService      : [192.168.182.90]:5701 [dev] [5.4.0] 
+
+Members {size:1, ver:1} [
+	Member [192.168.182.90]:5701 - cd4f198f-2500-4914-8e84-b797c8bb767a this
+]
+
+2024-07-28T18:40:43.533+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is STARTED
+2024-07-28T18:40:43.684+05:30  INFO 18848 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-28T18:40:43.891+05:30  INFO 18848 --- [productrestapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@68a97fc1
+2024-07-28T18:40:43.892+05:30  INFO 18848 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-28T18:40:43.938+05:30  INFO 18848 --- [productrestapi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-28T18:40:44.013+05:30  INFO 18848 --- [productrestapi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-28T18:40:44.075+05:30  INFO 18848 --- [productrestapi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-28T18:40:44.505+05:30  INFO 18848 --- [productrestapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-28T18:40:44.597+05:30  WARN 18848 --- [productrestapi] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-28T18:40:45.562+05:30  INFO 18848 --- [productrestapi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-28T18:40:45.565+05:30  INFO 18848 --- [productrestapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-28T18:40:45.867+05:30  INFO 18848 --- [productrestapi] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-28T18:40:46.260+05:30  WARN 18848 --- [productrestapi] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productRestController': Unsatisfied dependency expressed through field 'repository': Error creating bean with name 'productRepository' defined in com.boot.productrestapi.repos.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String); Reason: Validation failed for query for method public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String)
+2024-07-28T18:40:46.261+05:30  INFO 18848 --- [productrestapi] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-28T18:40:46.263+05:30  INFO 18848 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-28T18:40:46.270+05:30  INFO 18848 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-28T18:40:46.271+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is SHUTTING_DOWN
+2024-07-28T18:40:46.282+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.instance.impl.Node         : [192.168.182.90]:5701 [dev] [5.4.0] Shutting down multicast service...
+2024-07-28T18:40:46.284+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.instance.impl.Node         : [192.168.182.90]:5701 [dev] [5.4.0] Shutting down connection manager...
+2024-07-28T18:40:46.287+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.instance.impl.Node         : [192.168.182.90]:5701 [dev] [5.4.0] Shutting down node engine...
+2024-07-28T18:40:46.310+05:30  INFO 18848 --- [productrestapi] [main] c.hazelcast.instance.impl.NodeExtension  : [192.168.182.90]:5701 [dev] [5.4.0] Destroying node NodeExtension.
+2024-07-28T18:40:46.311+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.instance.impl.Node         : [192.168.182.90]:5701 [dev] [5.4.0] Hazelcast Shutdown is completed in 37 ms.
+2024-07-28T18:40:46.312+05:30  INFO 18848 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is SHUTDOWN
+2024-07-28T18:40:46.314+05:30  INFO 18848 --- [productrestapi] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-07-28T18:40:46.333+05:30  INFO 18848 --- [productrestapi] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-28T18:40:46.357+05:30 ERROR 18848 --- [productrestapi] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productRestController': Unsatisfied dependency expressed through field 'repository': Error creating bean with name 'productRepository' defined in com.boot.productrestapi.repos.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String); Reason: Validation failed for query for method public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.1.jar:3.3.1]
+	at com.boot.productrestapi.ProductrestapiApplication.main(ProductrestapiApplication.java:12) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productRepository' defined in com.boot.productrestapi.repos.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String); Reason: Validation failed for query for method public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784) ~[spring-beans-6.1.10.jar:6.1.10]
+	... 20 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String); Reason: Validation failed for query for method public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String)
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:115) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:99) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:88) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at java.base/java.util.Optional.map(Optional.java:260) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:88) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:357) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:286) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:135) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.util.Lazy.get(Lazy.java:113) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:292) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784) ~[spring-beans-6.1.10.jar:6.1.10]
+	... 30 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:100) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:70) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:60) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:170) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:252) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:95) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:111) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	... 42 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.query.SemanticException: Could not interpret path expression 'product'
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:143) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:167) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:173) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:860) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:765) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:140) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364) ~[spring-orm-6.1.10.jar:6.1.10]
+	at jdk.proxy2/jdk.proxy2.$Proxy139.createQuery(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:94) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	... 48 common frames omitted
+Caused by: org.hibernate.query.SemanticException: Could not interpret path expression 'product'
+	at org.hibernate.query.hql.internal.BasicDotIdentifierConsumer$BaseLocalSequencePart.resolvePathPart(BasicDotIdentifierConsumer.java:241) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.BasicDotIdentifierConsumer.consumeIdentifier(BasicDotIdentifierConsumer.java:92) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSimplePath(SemanticQueryBuilder.java:5259) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitIndexedPathAccessFragment(SemanticQueryBuilder.java:5218) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitGeneralPathFragment(SemanticQueryBuilder.java:5193) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitGeneralPathExpression(SemanticQueryBuilder.java:1886) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.grammars.hql.HqlParser$GeneralPathExpressionContext.accept(HqlParser.java:7967) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.antlr.v4.runtime.tree.AbstractParseTreeVisitor.visitChildren(AbstractParseTreeVisitor.java:46) ~[antlr4-runtime-4.13.0.jar:4.13.0]
+	at org.hibernate.grammars.hql.HqlParserBaseVisitor.visitBarePrimaryExpression(HqlParserBaseVisitor.java:777) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.grammars.hql.HqlParser$BarePrimaryExpressionContext.accept(HqlParser.java:7425) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.antlr.v4.runtime.tree.AbstractParseTreeVisitor.visitChildren(AbstractParseTreeVisitor.java:46) ~[antlr4-runtime-4.13.0.jar:4.13.0]
+	at org.hibernate.grammars.hql.HqlParserBaseVisitor.visitExpressionOrPredicate(HqlParserBaseVisitor.java:917) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.grammars.hql.HqlParser$ExpressionOrPredicateContext.accept(HqlParser.java:8195) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSelectableNode(SemanticQueryBuilder.java:1430) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSelection(SemanticQueryBuilder.java:1407) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSelectClause(SemanticQueryBuilder.java:1400) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitQuery(SemanticQueryBuilder.java:1249) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitQuerySpecExpression(SemanticQueryBuilder.java:1035) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitQuerySpecExpression(SemanticQueryBuilder.java:275) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.grammars.hql.HqlParser$QuerySpecExpressionContext.accept(HqlParser.java:2132) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSimpleQueryGroup(SemanticQueryBuilder.java:1020) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSimpleQueryGroup(SemanticQueryBuilder.java:275) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.grammars.hql.HqlParser$SimpleQueryGroupContext.accept(HqlParser.java:2003) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSelectStatement(SemanticQueryBuilder.java:490) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitStatement(SemanticQueryBuilder.java:449) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.buildSemanticModel(SemanticQueryBuilder.java:322) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.StandardHqlTranslator.translate(StandardHqlTranslator.java:71) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.internal.QueryInterpretationCacheStandardImpl.createHqlInterpretation(QueryInterpretationCacheStandardImpl.java:145) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.internal.QueryInterpretationCacheStandardImpl.resolveHqlInterpretation(QueryInterpretationCacheStandardImpl.java:132) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.interpretHql(AbstractSharedSessionContract.java:802) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:852) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	... 55 common frames omitted
+
+2024-07-28T18:45:27.118+05:30  INFO 26680 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 21.0.3 with PID 26680 (C:\Users\2126306\Documents\springboot\productrestapi\target\classes started by 2126306 in C:\Users\2126306\Documents\springboot\productrestapi)
+2024-07-28T18:45:27.121+05:30  INFO 26680 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-07-28T18:45:28.023+05:30  INFO 26680 --- [productrestapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-28T18:45:28.069+05:30  INFO 26680 --- [productrestapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2024-07-28T18:45:28.830+05:30  INFO 26680 --- [productrestapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8181 (http)
+2024-07-28T18:45:28.842+05:30  INFO 26680 --- [productrestapi] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-28T18:45:28.843+05:30  INFO 26680 --- [productrestapi] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-28T18:45:28.901+05:30  INFO 26680 --- [productrestapi] [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2024-07-28T18:45:28.902+05:30  INFO 26680 --- [productrestapi] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1732 ms
+2024-07-28T18:45:29.204+05:30  WARN 26680 --- [productrestapi] [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2024-07-28T18:45:29.418+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.system.logo                : [192.168.182.90]:5701 [dev] [5.4.0] 
+	o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+	|    |    / \       /         |     /         / \    |         |   
+	o----o       o     o   o----o |    o             o   o----o    |   
+	|    |  *     \   /           |     \       *     \       |    |   
+	o    o *       o o---o   o--o o----o o---o *       o o----o    o   
+2024-07-28T18:45:29.423+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+2024-07-28T18:45:29.424+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Hazelcast Platform 5.4.0 (20240415) starting at [192.168.182.90]:5701
+2024-07-28T18:45:29.424+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Cluster name: dev
+2024-07-28T18:45:29.425+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2024-07-28T18:45:29.433+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2024-07-28T18:45:30.134+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.system.security            : [192.168.182.90]:5701 [dev] [5.4.0] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2024-07-28T18:45:30.202+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.instance.impl.Node         : [192.168.182.90]:5701 [dev] [5.4.0] Using Multicast discovery
+2024-07-28T18:45:30.206+05:30  WARN 26680 --- [productrestapi] [main] com.hazelcast.cp.CPSubsystem             : [192.168.182.90]:5701 [dev] [5.4.0] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2024-07-28T18:45:30.421+05:30  INFO 26680 --- [productrestapi] [main] c.h.internal.diagnostics.Diagnostics     : [192.168.182.90]:5701 [dev] [5.4.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2024-07-28T18:45:30.428+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is STARTING
+2024-07-28T18:45:32.393+05:30  INFO 26680 --- [productrestapi] [main] c.h.internal.cluster.ClusterService      : [192.168.182.90]:5701 [dev] [5.4.0] 
+
+Members {size:1, ver:1} [
+	Member [192.168.182.90]:5701 - e06b0665-df58-4a26-901e-63b6bd50eea8 this
+]
+
+2024-07-28T18:45:32.407+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is STARTED
+2024-07-28T18:45:32.567+05:30  INFO 26680 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-28T18:45:32.795+05:30  INFO 26680 --- [productrestapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ab2e018
+2024-07-28T18:45:32.796+05:30  INFO 26680 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-28T18:45:32.834+05:30  INFO 26680 --- [productrestapi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-28T18:45:32.887+05:30  INFO 26680 --- [productrestapi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-28T18:45:32.926+05:30  INFO 26680 --- [productrestapi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-28T18:45:33.284+05:30  INFO 26680 --- [productrestapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-28T18:45:33.355+05:30  WARN 26680 --- [productrestapi] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-28T18:45:34.209+05:30  INFO 26680 --- [productrestapi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-28T18:45:34.212+05:30  INFO 26680 --- [productrestapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-28T18:45:34.462+05:30  INFO 26680 --- [productrestapi] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-28T18:45:34.791+05:30  WARN 26680 --- [productrestapi] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productRestController': Unsatisfied dependency expressed through field 'repository': Error creating bean with name 'productRepository' defined in com.boot.productrestapi.repos.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String); Reason: Validation failed for query for method public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String)
+2024-07-28T18:45:34.791+05:30  INFO 26680 --- [productrestapi] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-28T18:45:34.793+05:30  INFO 26680 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-28T18:45:34.806+05:30  INFO 26680 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-28T18:45:34.808+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is SHUTTING_DOWN
+2024-07-28T18:45:34.814+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.instance.impl.Node         : [192.168.182.90]:5701 [dev] [5.4.0] Shutting down multicast service...
+2024-07-28T18:45:34.815+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.instance.impl.Node         : [192.168.182.90]:5701 [dev] [5.4.0] Shutting down connection manager...
+2024-07-28T18:45:34.818+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.instance.impl.Node         : [192.168.182.90]:5701 [dev] [5.4.0] Shutting down node engine...
+2024-07-28T18:45:34.833+05:30  INFO 26680 --- [productrestapi] [main] c.hazelcast.instance.impl.NodeExtension  : [192.168.182.90]:5701 [dev] [5.4.0] Destroying node NodeExtension.
+2024-07-28T18:45:34.834+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.instance.impl.Node         : [192.168.182.90]:5701 [dev] [5.4.0] Hazelcast Shutdown is completed in 22 ms.
+2024-07-28T18:45:34.834+05:30  INFO 26680 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is SHUTDOWN
+2024-07-28T18:45:34.836+05:30  INFO 26680 --- [productrestapi] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-07-28T18:45:34.849+05:30  INFO 26680 --- [productrestapi] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-28T18:45:34.867+05:30 ERROR 26680 --- [productrestapi] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productRestController': Unsatisfied dependency expressed through field 'repository': Error creating bean with name 'productRepository' defined in com.boot.productrestapi.repos.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String); Reason: Validation failed for query for method public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.1.jar:3.3.1]
+	at com.boot.productrestapi.ProductrestapiApplication.main(ProductrestapiApplication.java:12) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productRepository' defined in com.boot.productrestapi.repos.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String); Reason: Validation failed for query for method public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784) ~[spring-beans-6.1.10.jar:6.1.10]
+	... 20 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String); Reason: Validation failed for query for method public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String)
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:115) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:99) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:88) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at java.base/java.util.Optional.map(Optional.java:260) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:88) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:357) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:286) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:135) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.util.Lazy.get(Lazy.java:113) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:292) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784) ~[spring-beans-6.1.10.jar:6.1.10]
+	... 30 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.boot.productrestapi.repos.ProductRepository.getByName(java.lang.String)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:100) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:70) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:60) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:170) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:252) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:95) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:111) ~[spring-data-commons-3.3.1.jar:3.3.1]
+	... 42 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.query.SemanticException: Could not interpret path expression 'product'
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:143) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:167) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:173) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:860) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:765) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:140) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364) ~[spring-orm-6.1.10.jar:6.1.10]
+	at jdk.proxy2/jdk.proxy2.$Proxy139.createQuery(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:94) ~[spring-data-jpa-3.3.1.jar:3.3.1]
+	... 48 common frames omitted
+Caused by: org.hibernate.query.SemanticException: Could not interpret path expression 'product'
+	at org.hibernate.query.hql.internal.BasicDotIdentifierConsumer$BaseLocalSequencePart.resolvePathPart(BasicDotIdentifierConsumer.java:241) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.BasicDotIdentifierConsumer.consumeIdentifier(BasicDotIdentifierConsumer.java:92) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSimplePath(SemanticQueryBuilder.java:5259) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitIndexedPathAccessFragment(SemanticQueryBuilder.java:5218) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitGeneralPathFragment(SemanticQueryBuilder.java:5193) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitGeneralPathExpression(SemanticQueryBuilder.java:1886) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.grammars.hql.HqlParser$GeneralPathExpressionContext.accept(HqlParser.java:7967) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.antlr.v4.runtime.tree.AbstractParseTreeVisitor.visitChildren(AbstractParseTreeVisitor.java:46) ~[antlr4-runtime-4.13.0.jar:4.13.0]
+	at org.hibernate.grammars.hql.HqlParserBaseVisitor.visitBarePrimaryExpression(HqlParserBaseVisitor.java:777) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.grammars.hql.HqlParser$BarePrimaryExpressionContext.accept(HqlParser.java:7425) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.antlr.v4.runtime.tree.AbstractParseTreeVisitor.visitChildren(AbstractParseTreeVisitor.java:46) ~[antlr4-runtime-4.13.0.jar:4.13.0]
+	at org.hibernate.grammars.hql.HqlParserBaseVisitor.visitExpressionOrPredicate(HqlParserBaseVisitor.java:917) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.grammars.hql.HqlParser$ExpressionOrPredicateContext.accept(HqlParser.java:8195) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSelectableNode(SemanticQueryBuilder.java:1430) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSelection(SemanticQueryBuilder.java:1407) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSelectClause(SemanticQueryBuilder.java:1400) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitQuery(SemanticQueryBuilder.java:1249) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitQuerySpecExpression(SemanticQueryBuilder.java:1035) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitQuerySpecExpression(SemanticQueryBuilder.java:275) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.grammars.hql.HqlParser$QuerySpecExpressionContext.accept(HqlParser.java:2132) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSimpleQueryGroup(SemanticQueryBuilder.java:1020) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSimpleQueryGroup(SemanticQueryBuilder.java:275) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.grammars.hql.HqlParser$SimpleQueryGroupContext.accept(HqlParser.java:2003) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSelectStatement(SemanticQueryBuilder.java:490) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitStatement(SemanticQueryBuilder.java:449) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.buildSemanticModel(SemanticQueryBuilder.java:322) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.hql.internal.StandardHqlTranslator.translate(StandardHqlTranslator.java:71) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.internal.QueryInterpretationCacheStandardImpl.createHqlInterpretation(QueryInterpretationCacheStandardImpl.java:145) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.query.internal.QueryInterpretationCacheStandardImpl.resolveHqlInterpretation(QueryInterpretationCacheStandardImpl.java:132) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.interpretHql(AbstractSharedSessionContract.java:802) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:852) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	... 55 common frames omitted
+
+2024-07-28T18:49:01.190+05:30  INFO 6764 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 21.0.3 with PID 6764 (C:\Users\2126306\Documents\springboot\productrestapi\target\classes started by 2126306 in C:\Users\2126306\Documents\springboot\productrestapi)
+2024-07-28T18:49:01.195+05:30  INFO 6764 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-07-28T18:49:02.124+05:30  INFO 6764 --- [productrestapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-28T18:49:02.169+05:30  INFO 6764 --- [productrestapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2024-07-28T18:49:02.856+05:30  INFO 6764 --- [productrestapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8181 (http)
+2024-07-28T18:49:02.866+05:30  INFO 6764 --- [productrestapi] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-28T18:49:02.867+05:30  INFO 6764 --- [productrestapi] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-28T18:49:02.927+05:30  INFO 6764 --- [productrestapi] [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2024-07-28T18:49:02.928+05:30  INFO 6764 --- [productrestapi] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1664 ms
+2024-07-28T18:49:03.148+05:30  WARN 6764 --- [productrestapi] [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2024-07-28T18:49:03.214+05:30  INFO 6764 --- [productrestapi] [main] com.hazelcast.system.logo                : [192.168.182.90]:5701 [dev] [5.4.0] 
+	o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+	|    |    / \       /         |     /         / \    |         |   
+	o----o       o     o   o----o |    o             o   o----o    |   
+	|    |  *     \   /           |     \       *     \       |    |   
+	o    o *       o o---o   o--o o----o o---o *       o o----o    o   
+2024-07-28T18:49:03.214+05:30  INFO 6764 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+2024-07-28T18:49:03.214+05:30  INFO 6764 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Hazelcast Platform 5.4.0 (20240415) starting at [192.168.182.90]:5701
+2024-07-28T18:49:03.214+05:30  INFO 6764 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Cluster name: dev
+2024-07-28T18:49:03.214+05:30  INFO 6764 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2024-07-28T18:49:03.217+05:30  INFO 6764 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2024-07-28T18:49:03.648+05:30  INFO 6764 --- [productrestapi] [main] com.hazelcast.system.security            : [192.168.182.90]:5701 [dev] [5.4.0] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2024-07-28T18:49:03.710+05:30  INFO 6764 --- [productrestapi] [main] com.hazelcast.instance.impl.Node         : [192.168.182.90]:5701 [dev] [5.4.0] Using Multicast discovery
+2024-07-28T18:49:03.715+05:30  WARN 6764 --- [productrestapi] [main] com.hazelcast.cp.CPSubsystem             : [192.168.182.90]:5701 [dev] [5.4.0] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2024-07-28T18:49:03.899+05:30  INFO 6764 --- [productrestapi] [main] c.h.internal.diagnostics.Diagnostics     : [192.168.182.90]:5701 [dev] [5.4.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2024-07-28T18:49:03.903+05:30  INFO 6764 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is STARTING
+2024-07-28T18:49:05.819+05:30  INFO 6764 --- [productrestapi] [main] c.h.internal.cluster.ClusterService      : [192.168.182.90]:5701 [dev] [5.4.0] 
+
+Members {size:1, ver:1} [
+	Member [192.168.182.90]:5701 - b269a4a5-d1f0-4552-bea6-50f2269ff0b5 this
+]
+
+2024-07-28T18:49:05.830+05:30  INFO 6764 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is STARTED
+2024-07-28T18:49:05.969+05:30  INFO 6764 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-28T18:49:06.146+05:30  INFO 6764 --- [productrestapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3777fc44
+2024-07-28T18:49:06.148+05:30  INFO 6764 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-28T18:49:06.184+05:30  INFO 6764 --- [productrestapi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-28T18:49:06.237+05:30  INFO 6764 --- [productrestapi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-28T18:49:06.288+05:30  INFO 6764 --- [productrestapi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-28T18:49:06.690+05:30  INFO 6764 --- [productrestapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-28T18:49:06.756+05:30  WARN 6764 --- [productrestapi] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-28T18:49:07.567+05:30  INFO 6764 --- [productrestapi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-28T18:49:07.570+05:30  INFO 6764 --- [productrestapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-28T18:49:07.800+05:30  INFO 6764 --- [productrestapi] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-28T18:49:08.259+05:30  WARN 6764 --- [productrestapi] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-28T18:49:09.064+05:30  INFO 6764 --- [productrestapi] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-07-28T18:49:09.135+05:30  INFO 6764 --- [productrestapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8181 (http) with context path '/productapi'
+2024-07-28T18:49:09.149+05:30  INFO 6764 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : Started ProductrestapiApplication in 8.525 seconds (process running for 9.213)
+2024-07-28T18:49:15.252+05:30  INFO 6764 --- [productrestapi] [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-28T18:49:15.253+05:30  INFO 6764 --- [productrestapi] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-28T18:49:15.255+05:30  INFO 6764 --- [productrestapi] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-28T19:05:04.858+05:30  WARN 6764 --- [productrestapi] [http-nio-8181-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "Redmi"]
+2024-07-28T19:10:48.874+05:30  INFO 6764 --- [productrestapi] [RMI TCP Connection(34)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-28T19:10:48.889+05:30  INFO 6764 --- [productrestapi] [RMI TCP Connection(34)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-28T19:10:48.893+05:30  INFO 6764 --- [productrestapi] [RMI TCP Connection(34)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-28T19:10:48.899+05:30  INFO 6764 --- [productrestapi] [RMI TCP Connection(34)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-28T19:10:52.792+05:30  INFO 29148 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 21.0.3 with PID 29148 (C:\Users\2126306\Documents\springboot\productrestapi\target\classes started by 2126306 in C:\Users\2126306\Documents\springboot\productrestapi)
+2024-07-28T19:10:52.795+05:30  INFO 29148 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-07-28T19:10:53.692+05:30  INFO 29148 --- [productrestapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-28T19:10:53.745+05:30  INFO 29148 --- [productrestapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2024-07-28T19:10:54.477+05:30  INFO 29148 --- [productrestapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8181 (http)
+2024-07-28T19:10:54.494+05:30  INFO 29148 --- [productrestapi] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-28T19:10:54.494+05:30  INFO 29148 --- [productrestapi] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-28T19:10:54.577+05:30  INFO 29148 --- [productrestapi] [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2024-07-28T19:10:54.577+05:30  INFO 29148 --- [productrestapi] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1729 ms
+2024-07-28T19:10:54.845+05:30  WARN 29148 --- [productrestapi] [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2024-07-28T19:10:54.920+05:30  INFO 29148 --- [productrestapi] [main] com.hazelcast.system.logo                : [192.168.182.90]:5701 [dev] [5.4.0] 
+	o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+	|    |    / \       /         |     /         / \    |         |   
+	o----o       o     o   o----o |    o             o   o----o    |   
+	|    |  *     \   /           |     \       *     \       |    |   
+	o    o *       o o---o   o--o o----o o---o *       o o----o    o   
+2024-07-28T19:10:54.920+05:30  INFO 29148 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+2024-07-28T19:10:54.920+05:30  INFO 29148 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Hazelcast Platform 5.4.0 (20240415) starting at [192.168.182.90]:5701
+2024-07-28T19:10:54.921+05:30  INFO 29148 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Cluster name: dev
+2024-07-28T19:10:54.921+05:30  INFO 29148 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2024-07-28T19:10:54.923+05:30  INFO 29148 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2024-07-28T19:10:55.422+05:30  INFO 29148 --- [productrestapi] [main] com.hazelcast.system.security            : [192.168.182.90]:5701 [dev] [5.4.0] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2024-07-28T19:10:55.490+05:30  INFO 29148 --- [productrestapi] [main] com.hazelcast.instance.impl.Node         : [192.168.182.90]:5701 [dev] [5.4.0] Using Multicast discovery
+2024-07-28T19:10:55.495+05:30  WARN 29148 --- [productrestapi] [main] com.hazelcast.cp.CPSubsystem             : [192.168.182.90]:5701 [dev] [5.4.0] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2024-07-28T19:10:55.684+05:30  INFO 29148 --- [productrestapi] [main] c.h.internal.diagnostics.Diagnostics     : [192.168.182.90]:5701 [dev] [5.4.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2024-07-28T19:10:55.689+05:30  INFO 29148 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is STARTING
+2024-07-28T19:10:57.773+05:30  INFO 29148 --- [productrestapi] [main] c.h.internal.cluster.ClusterService      : [192.168.182.90]:5701 [dev] [5.4.0] 
+
+Members {size:1, ver:1} [
+	Member [192.168.182.90]:5701 - 91db7fbb-2202-43e8-bc10-179c50f09e5b this
+]
+
+2024-07-28T19:10:57.788+05:30  INFO 29148 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is STARTED
+2024-07-28T19:10:57.908+05:30  INFO 29148 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-28T19:10:58.137+05:30  INFO 29148 --- [productrestapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@576323ff
+2024-07-28T19:10:58.140+05:30  INFO 29148 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-28T19:10:58.187+05:30  INFO 29148 --- [productrestapi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-28T19:10:58.259+05:30  INFO 29148 --- [productrestapi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-28T19:10:58.316+05:30  INFO 29148 --- [productrestapi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-28T19:10:58.812+05:30  INFO 29148 --- [productrestapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-28T19:10:58.887+05:30  WARN 29148 --- [productrestapi] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-28T19:11:00.056+05:30  INFO 29148 --- [productrestapi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-28T19:11:00.062+05:30  INFO 29148 --- [productrestapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-28T19:11:00.660+05:30  INFO 29148 --- [productrestapi] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-28T19:11:01.261+05:30  WARN 29148 --- [productrestapi] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-28T19:11:01.951+05:30  INFO 29148 --- [productrestapi] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-07-28T19:11:02.025+05:30  INFO 29148 --- [productrestapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8181 (http) with context path '/productapi'
+2024-07-28T19:11:02.036+05:30  INFO 29148 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : Started ProductrestapiApplication in 9.615 seconds (process running for 10.432)
+2024-07-28T19:11:02.690+05:30  INFO 29148 --- [productrestapi] [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-28T19:11:02.690+05:30  INFO 29148 --- [productrestapi] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-28T19:11:02.691+05:30  INFO 29148 --- [productrestapi] [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-28T19:11:22.873+05:30 ERROR 29148 --- [productrestapi] [http-nio-8181-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/productapi] threw exception [Request processing failed: java.lang.IllegalStateException: Ambiguous handler methods mapped for '/productapi/product/1000': {public java.util.List com.boot.productrestapi.controllers.ProductRestController.getByPrice(java.lang.String), public java.util.List com.boot.productrestapi.controllers.ProductRestController.getByName(java.lang.String)}] with root cause
+
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/productapi/product/1000': {public java.util.List com.boot.productrestapi.controllers.ProductRestController.getByPrice(java.lang.String), public java.util.List com.boot.productrestapi.controllers.ProductRestController.getByName(java.lang.String)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:431) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:507) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.25.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.25.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:107) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-07-28T19:13:09.515+05:30  INFO 29148 --- [productrestapi] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-28T19:13:09.525+05:30  INFO 29148 --- [productrestapi] [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-28T19:13:09.527+05:30  INFO 29148 --- [productrestapi] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-28T19:13:09.531+05:30  INFO 29148 --- [productrestapi] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-28T19:13:13.446+05:30  INFO 19980 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 21.0.3 with PID 19980 (C:\Users\2126306\Documents\springboot\productrestapi\target\classes started by 2126306 in C:\Users\2126306\Documents\springboot\productrestapi)
+2024-07-28T19:13:13.448+05:30  INFO 19980 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-07-28T19:13:14.263+05:30  INFO 19980 --- [productrestapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-28T19:13:14.309+05:30  INFO 19980 --- [productrestapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2024-07-28T19:13:14.945+05:30  INFO 19980 --- [productrestapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8181 (http)
+2024-07-28T19:13:14.955+05:30  INFO 19980 --- [productrestapi] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-28T19:13:14.955+05:30  INFO 19980 --- [productrestapi] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-28T19:13:15.009+05:30  INFO 19980 --- [productrestapi] [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2024-07-28T19:13:15.010+05:30  INFO 19980 --- [productrestapi] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1514 ms
+2024-07-28T19:13:15.226+05:30  WARN 19980 --- [productrestapi] [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2024-07-28T19:13:15.294+05:30  INFO 19980 --- [productrestapi] [main] com.hazelcast.system.logo                : [192.168.182.90]:5701 [dev] [5.4.0] 
+	o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+	|    |    / \       /         |     /         / \    |         |   
+	o----o       o     o   o----o |    o             o   o----o    |   
+	|    |  *     \   /           |     \       *     \       |    |   
+	o    o *       o o---o   o--o o----o o---o *       o o----o    o   
+2024-07-28T19:13:15.294+05:30  INFO 19980 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+2024-07-28T19:13:15.294+05:30  INFO 19980 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Hazelcast Platform 5.4.0 (20240415) starting at [192.168.182.90]:5701
+2024-07-28T19:13:15.294+05:30  INFO 19980 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Cluster name: dev
+2024-07-28T19:13:15.294+05:30  INFO 19980 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2024-07-28T19:13:15.297+05:30  INFO 19980 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2024-07-28T19:13:15.738+05:30  INFO 19980 --- [productrestapi] [main] com.hazelcast.system.security            : [192.168.182.90]:5701 [dev] [5.4.0] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2024-07-28T19:13:15.791+05:30  INFO 19980 --- [productrestapi] [main] com.hazelcast.instance.impl.Node         : [192.168.182.90]:5701 [dev] [5.4.0] Using Multicast discovery
+2024-07-28T19:13:15.794+05:30  WARN 19980 --- [productrestapi] [main] com.hazelcast.cp.CPSubsystem             : [192.168.182.90]:5701 [dev] [5.4.0] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2024-07-28T19:13:15.959+05:30  INFO 19980 --- [productrestapi] [main] c.h.internal.diagnostics.Diagnostics     : [192.168.182.90]:5701 [dev] [5.4.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2024-07-28T19:13:15.964+05:30  INFO 19980 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is STARTING
+2024-07-28T19:13:18.289+05:30  INFO 19980 --- [productrestapi] [main] c.h.internal.cluster.ClusterService      : [192.168.182.90]:5701 [dev] [5.4.0] 
+
+Members {size:1, ver:1} [
+	Member [192.168.182.90]:5701 - ab08675f-fe4d-4315-a455-0a75256c8b81 this
+]
+
+2024-07-28T19:13:18.305+05:30  INFO 19980 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is STARTED
+2024-07-28T19:13:18.447+05:30  INFO 19980 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-28T19:13:18.632+05:30  INFO 19980 --- [productrestapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2dd4a7a9
+2024-07-28T19:13:18.633+05:30  INFO 19980 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-28T19:13:18.671+05:30  INFO 19980 --- [productrestapi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-28T19:13:18.724+05:30  INFO 19980 --- [productrestapi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-28T19:13:18.761+05:30  INFO 19980 --- [productrestapi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-28T19:13:19.144+05:30  INFO 19980 --- [productrestapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-28T19:13:19.214+05:30  WARN 19980 --- [productrestapi] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-28T19:13:20.204+05:30  INFO 19980 --- [productrestapi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-28T19:13:20.208+05:30  INFO 19980 --- [productrestapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-28T19:13:20.486+05:30  INFO 19980 --- [productrestapi] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-28T19:13:20.985+05:30  WARN 19980 --- [productrestapi] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-28T19:13:21.776+05:30  INFO 19980 --- [productrestapi] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-07-28T19:13:21.858+05:30  INFO 19980 --- [productrestapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8181 (http) with context path '/productapi'
+2024-07-28T19:13:21.873+05:30  INFO 19980 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : Started ProductrestapiApplication in 8.762 seconds (process running for 9.418)
+2024-07-28T19:13:22.128+05:30  INFO 19980 --- [productrestapi] [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-28T19:13:22.128+05:30  INFO 19980 --- [productrestapi] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-28T19:13:22.129+05:30  INFO 19980 --- [productrestapi] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-28T19:14:15.429+05:30  INFO 19980 --- [productrestapi] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-28T19:14:15.441+05:30  INFO 19980 --- [productrestapi] [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-28T19:14:15.443+05:30  INFO 19980 --- [productrestapi] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-28T19:14:15.448+05:30  INFO 19980 --- [productrestapi] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-28T19:14:19.183+05:30  INFO 20780 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : Starting ProductrestapiApplication using Java 21.0.3 with PID 20780 (C:\Users\2126306\Documents\springboot\productrestapi\target\classes started by 2126306 in C:\Users\2126306\Documents\springboot\productrestapi)
+2024-07-28T19:14:19.184+05:30  INFO 20780 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-07-28T19:14:20.048+05:30  INFO 20780 --- [productrestapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-28T19:14:20.090+05:30  INFO 20780 --- [productrestapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2024-07-28T19:14:20.710+05:30  INFO 20780 --- [productrestapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8181 (http)
+2024-07-28T19:14:20.720+05:30  INFO 20780 --- [productrestapi] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-28T19:14:20.720+05:30  INFO 20780 --- [productrestapi] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-28T19:14:20.772+05:30  INFO 20780 --- [productrestapi] [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2024-07-28T19:14:20.773+05:30  INFO 20780 --- [productrestapi] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1548 ms
+2024-07-28T19:14:21.036+05:30  WARN 20780 --- [productrestapi] [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2024-07-28T19:14:21.096+05:30  INFO 20780 --- [productrestapi] [main] com.hazelcast.system.logo                : [192.168.182.90]:5701 [dev] [5.4.0] 
+	o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+	|    |    / \       /         |     /         / \    |         |   
+	o----o       o     o   o----o |    o             o   o----o    |   
+	|    |  *     \   /           |     \       *     \       |    |   
+	o    o *       o o---o   o--o o----o o---o *       o o----o    o   
+2024-07-28T19:14:21.097+05:30  INFO 20780 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+2024-07-28T19:14:21.097+05:30  INFO 20780 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Hazelcast Platform 5.4.0 (20240415) starting at [192.168.182.90]:5701
+2024-07-28T19:14:21.097+05:30  INFO 20780 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Cluster name: dev
+2024-07-28T19:14:21.097+05:30  INFO 20780 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+2024-07-28T19:14:21.100+05:30  INFO 20780 --- [productrestapi] [main] com.hazelcast.system                     : [192.168.182.90]:5701 [dev] [5.4.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+2024-07-28T19:14:21.508+05:30  INFO 20780 --- [productrestapi] [main] com.hazelcast.system.security            : [192.168.182.90]:5701 [dev] [5.4.0] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see security recommendations and the status of current config.
+2024-07-28T19:14:21.562+05:30  INFO 20780 --- [productrestapi] [main] com.hazelcast.instance.impl.Node         : [192.168.182.90]:5701 [dev] [5.4.0] Using Multicast discovery
+2024-07-28T19:14:21.565+05:30  WARN 20780 --- [productrestapi] [main] com.hazelcast.cp.CPSubsystem             : [192.168.182.90]:5701 [dev] [5.4.0] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2024-07-28T19:14:21.731+05:30  INFO 20780 --- [productrestapi] [main] c.h.internal.diagnostics.Diagnostics     : [192.168.182.90]:5701 [dev] [5.4.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2024-07-28T19:14:21.736+05:30  INFO 20780 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is STARTING
+2024-07-28T19:14:23.770+05:30  INFO 20780 --- [productrestapi] [main] c.h.internal.cluster.ClusterService      : [192.168.182.90]:5701 [dev] [5.4.0] 
+
+Members {size:1, ver:1} [
+	Member [192.168.182.90]:5701 - bfa3c079-1a26-4206-a4ba-76cd0be8e99a this
+]
+
+2024-07-28T19:14:23.782+05:30  INFO 20780 --- [productrestapi] [main] com.hazelcast.core.LifecycleService      : [192.168.182.90]:5701 [dev] [5.4.0] [192.168.182.90]:5701 is STARTED
+2024-07-28T19:14:23.903+05:30  INFO 20780 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-28T19:14:24.172+05:30  INFO 20780 --- [productrestapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@576323ff
+2024-07-28T19:14:24.173+05:30  INFO 20780 --- [productrestapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-28T19:14:24.208+05:30  INFO 20780 --- [productrestapi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-28T19:14:24.260+05:30  INFO 20780 --- [productrestapi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-28T19:14:24.292+05:30  INFO 20780 --- [productrestapi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-28T19:14:24.679+05:30  INFO 20780 --- [productrestapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-28T19:14:24.794+05:30  WARN 20780 --- [productrestapi] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-28T19:14:25.828+05:30  INFO 20780 --- [productrestapi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-28T19:14:25.831+05:30  INFO 20780 --- [productrestapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-28T19:14:26.063+05:30  INFO 20780 --- [productrestapi] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-28T19:14:26.482+05:30  WARN 20780 --- [productrestapi] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-28T19:14:27.164+05:30  INFO 20780 --- [productrestapi] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-07-28T19:14:27.245+05:30  INFO 20780 --- [productrestapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8181 (http) with context path '/productapi'
+2024-07-28T19:14:27.254+05:30  INFO 20780 --- [productrestapi] [main] c.b.p.ProductrestapiApplication          : Started ProductrestapiApplication in 8.416 seconds (process running for 9.251)
+2024-07-28T19:14:27.686+05:30  INFO 20780 --- [productrestapi] [RMI TCP Connection(11)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-28T19:14:27.686+05:30  INFO 20780 --- [productrestapi] [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-28T19:14:27.687+05:30  INFO 20780 --- [productrestapi] [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-28T19:50:12.845+05:30  INFO 20780 --- [productrestapi] [RMI TCP Connection(48)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-28T19:50:12.857+05:30  INFO 20780 --- [productrestapi] [RMI TCP Connection(48)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-28T19:50:12.859+05:30  INFO 20780 --- [productrestapi] [RMI TCP Connection(48)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-28T19:50:12.864+05:30  INFO 20780 --- [productrestapi] [RMI TCP Connection(48)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
