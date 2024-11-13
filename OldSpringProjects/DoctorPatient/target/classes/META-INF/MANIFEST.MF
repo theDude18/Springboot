@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Health-Inspector
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: john
+Implementation-Vendor-Id: com.cts
+Build-Jdk: 1.8.0_321
+Implementation-URL: https://spring.io/projects/spring-boot/Health-Insp
+ ector
+Created-By: Maven Integration for Eclipse
+
